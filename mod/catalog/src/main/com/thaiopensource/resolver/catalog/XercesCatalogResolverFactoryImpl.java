@@ -52,7 +52,6 @@ public class XercesCatalogResolverFactoryImpl implements CatalogResolverFactory 
 		CatalogManager catalogManager = new CatalogManager();
 		catalogManager.setIgnoreMissingProperties(true);
 		catalogManager.setRelativeCatalogs(true);
-		catalogManager.setVerbosity(100);
 		catalogManager.setCatalogFiles(String.join(";", catalogUris));
 
 		CatalogResolver resolver = new CatalogResolver(catalogManager);
