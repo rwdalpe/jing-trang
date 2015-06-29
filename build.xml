@@ -341,7 +341,7 @@
   <gzip zipfile="${build.dir}/dist/relaxng.tar.gz" src="${build.dir}/relaxng.tar"/>
 </target>
 
-<target name="dist" depends="test,validate,jing-dist,trang-dist,dtdinst-dist,website"
+<target name="dist" depends="validate,jing-dist,trang-dist,dtdinst-dist,website"
 	description="Make a distribution, leaving artifacts in ${build.dir}/dist"/>
 
 <target name="googlecode.properties.available">
